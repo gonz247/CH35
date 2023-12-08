@@ -1,0 +1,42 @@
+/*
+Estilos para el archivo bootstrap.html
+
+Estilos para el cuerpo y el Titular principal de la pagina
+Agregamos estilos con el selector:
+(#) - para Id
+(.)- para clases
+(elemento)nombre de la etiqueta- para elementos especificos
+([attribute]):para elementos que tienen un atributo específico, independientemente de su valor.*/
+body{
+    background-color: beige
+}
+h1, h2{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#ClaseContenedor, #ClaseRow, #ClaseCol{
+color: aliceblue;
+background-color: brown;
+border: black 1px solid;
+border-radius: 10px;
+
+}
+
+#NavPrincipal{
+background-color: brown;
+}
+.nav-link, .navbar-brand, .nav-link {
+    color: aliceblue;
+}
+
+.nav-link:hover, .navbar-brand:hover, .nav-link:hover, .navbar-toggler:hover{
+    color: yellow;
+}
+.navbar-toggler{
+    background-color: bisque;
+}
+
+#Cosito1{
+    background-color: black;
+}
