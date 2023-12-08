@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de adopcion de mascotas</title>
+    <link rel="stylesheet" href="./Styles/adoptionFormStyle.css">
+</head>
+<body>
+<h2>Formulario de adopcion de mascotas</h2>
+<form>
+<label for="name">Nombre Completo:</label><br>
+<input type="text" id="name" name="name"><br>
+
+<label for="age">Edad:</label><br>
+<input type="number" id="age" name="age" min="18"><br>
+
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email"><br>
+
+<label for="phone">Numero Celular:</label><br>
+<input type="tel" id="phone" name="phone"><br>
+
+<label for="address">Direccion:</label><br>
+<input type="text" id="address" name="address"><br>
+
+<label for="previouspets">Mascotas adoptadas anteriormente:</label><br>
+<textarea id="previouspets" name="previouspets" rows="4" cols="50"></textarea><br>
+
+<label for="currentpets">Mascotas actuales (Numero y especie):</label><br>
+<textarea id="currentpets" name="currentpets" rows="4" cols="50"></textarea><br>
+
+<label for="whyadopt">¿Por que estas interesadx en adoptar una mascota?</label><br>
+<textarea id="whyadopt" name="whyadopt" rows="4" cols="50"></textarea><br>
+
+<label for="adoptionplan">Compartenos tu plan de adopcion:</label><br>
+<textarea id="adoptionplan" name="adoptionplan" rows="4" cols="50"></textarea><br>
+
+<label for="agreement">Al enviar este formulario, acepto proporcionar información precisa y seguir los procedimientos de adopción del centro. Al hacer clic en el botón 'Enviar', reconozco que he leído y entendido los términos y condiciones</label>
+<input type="checkbox" id="agreement" name="agreement" value="accepted"><br>
+
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

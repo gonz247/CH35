@@ -1,0 +1,49 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #B0F2C1;
+    color: #3D4646;
+   }
+   
+   h2 {
+    color: #287E6A;
+   }
+   
+   form {
+    background-color: #E0C388;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+   }
+   
+   label {
+    display: block;
+    margin-top: 10px;
+   }
+   
+   input[type="text"],
+   input[type="number"],
+   input[type="email"],
+   input[type="tel"],
+   input[type="previouspets"]
+   textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   }
+   
+   input[type="submit"] {
+    background-color: #287E6A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+   
+   input[type="submit"]:hover {
+    background-color: #1B6858;
+   }
