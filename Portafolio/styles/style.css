@@ -1,0 +1,65 @@
+:root {
+    --font-primary: 'Roboto Mono', monospace;
+    --color-primary:#024959;
+    --color-secondary: #025951;
+    --color-text-primary: #0CF25D;
+    --color-text-secondary: #d904bdd7;
+    --color-background: #02735E;
+    --color-light: #07b653;
+    --color-dark: #07632f;
+}
+
+.container{
+    font-family: var(--font-primary);
+
+}
+
+body {
+    margin: 0; /*Elimnina el margin que le añade por defecto el navegador a nuestro body*/
+    background: lightgray;
+  }
+
+
+  .bg {
+    text-align: center;
+    padding: 10px;
+    height: 100vh; /* La caja ocupará el 100% del alto del navegador*/
+    background-size: cover; /* Ajusta la proporoción de la imagen a la caja*/
+    background-position: center;
+    box-sizing: border-box; /* Definimos si la altura de la caja será hasta el borde. Es decir, si habrá padding o no*/
+  
+    /* -- modo flexbox -- */
+    display: flex; /*Las cajas de dentro se posicionarán según flexbox*/
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* -- modo flexbox -- */
+  
+    /* -- blur efect -- */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  }
+  .bg-text {
+    color: var(--main-color);
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    /* Ver apartado 4.4.Google fonts */
+    font-family: var(--font-primary);
+  }
+  /* El background es una imagen previamente descargada en nuestra carpeta images del proyecto */
+  .home {
+    background-image: url(../assets/pxfuel.jpg) ;
+  }
+
+ h1{
+    font-family: var(--font-primary);
+    color: var(--color-text-primary);
+  }
