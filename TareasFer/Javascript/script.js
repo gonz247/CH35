@@ -56,3 +56,59 @@ let esMayorEdad = true;
 let edad= 25;
 let invitadoEspecial = null;
 let horaSalida = undefined;
+
+// document.write(nombre);
+
+/* Encasillamiento o tipado
+nos es util para el mantenimiento del codigo ya que lo hace mas legible y facil de entender
+prevencion de errores para reducir la probabilidad de los mismos
+mejora el rendimiento de nuestro programa
+*/
+
+// let numero = 15;
+// let texto = 'hola';
+
+//con encasillamiento (definir el tipo de dato que maneja la variable)
+
+// let numeroEncasillado= Number= 5;
+// let textoEncasillado= String= 'hola';
+
+// console.log(typeof(nombre));
+
+/* 
+conversion de string a number
+let funcionNumber = console.log(typeof Number (nombre));
+
+metodoParseInt = console.log(typeof parseInt(nombre));
+metodoParseFloat = console.log(typeof parseFloat(nombre));
+
+parseInt y parseFloat son funciones que se utilizan para convertir cadenas
+de texto en numero, ambas nos ayudan en este cambio*/
+
+//conversion de nombre a string
+
+/*console.log(typeof String (edad));
+console.log(typeof edad.toString());*/
+
+//convertir de boolean a number
+
+/*let numero = Number (esMayorEdad);
+console.log(numero);*/
+
+//convertir boolean a string
+/*let texto = String(esMayorEdad);
+console.log(typeof(texto));
+console.log(typeof esMayorEdad.toString());*/
+
+//invertir boolean
+/*let negacion = !esMayorEdad;
+console.log(negacion);*/
+
+//concatenar
+
+let saludo = 'Hola humano ';
+let frase = 'el futuro es hoy, oiste viejo?';
+
+texto = saludo + frase;
+
+console.log(texto);
