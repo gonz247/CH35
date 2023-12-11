@@ -122,7 +122,7 @@ Vamos a poder acceder a diversas propiedades para modificar el comportamiento de
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
 
     width: auto;
