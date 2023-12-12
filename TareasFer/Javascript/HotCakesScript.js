@@ -43,7 +43,6 @@ var instrucciones = [
     "8. Sirve caliente con tu jarabe o frutas favoritas.",
 ];
 
-console.log("\nInstrucciones:");
 for (var j = 0; j < instrucciones.length; j++) {
     document.write(instrucciones[j] + '<br>');
 }

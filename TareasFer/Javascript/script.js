@@ -50,13 +50,14 @@ bollean: true/false
 null:nulo
 undefined: noesta asignado o definido*/
 
+/*
 let nombre="Daniel";
 let invitadosExtra= 2;
 let esMayorEdad = true;
 let edad= 25;
 let invitadoEspecial = null;
 let horaSalida = undefined;
-
+*/
 // document.write(nombre);
 
 /* Encasillamiento o tipado
@@ -105,10 +106,90 @@ console.log(typeof esMayorEdad.toString());*/
 console.log(negacion);*/
 
 //concatenar
-
+/*
 let saludo = 'Hola humano ';
 let frase = 'el futuro es hoy, oiste viejo?';
 
 texto = saludo + frase;
 
-console.log(texto);
+console.log(texto); */
+
+/* console.log(); nos permite visualizar en consola del navegador el codigo de JS
+console.warn(); muestra un mensaje de advertencia
+console.table;
+*/
+
+let firstName;
+firstName = 'Daniel';
+let lastName = 'Maldonado';
+
+console.log(firstName + ' ' + lastName);
+console.log('Mi nombre es ' + firstName + ' y mi apellido es ' + lastName);
+
+/* ECMAScript 6 (ES6). Interpolacion de cadenas
+> - backticks ``
+> - para variables las invocamos ${variable}
+> - Texto para string
+ejemplo:
+*/
+
+let age = 37;
+console.log(`Mi nombre es ${firstName} y mi apellido es ${lastName} y tengo ${age} años`);
+
+// con la interpolacion de cadenas igual pueden leerse los saltos de linea sin escribir \n o utilizar mas de un console.log()
+// ejemplo:
+
+console.log(`Mi nombre es ${firstName} 
+y mi apellido es ${lastName} 
+y tengo ${age} años`);
+
+
+//console.warn();
+console.warn(`Precaucion, no es buena práctica dejar sin punto y coma`);
+//console.error();
+console.error(`Status 404: Failed`);
+
+/* Array. Se traduce como matriz o arreglo.
+Es un tipo de dato, en el cual se almacena una coleccion de elementos de manera ordenada. 
+Los arrays se pueden manipular mediante metodos especificos. 
+Los elementos de un array se contabilizan como indices empezando por el indice 0, por lo cual el primer elemento del array posee el indice 0
+Se declaran como variables, seguido del signo igual y corchetes. Dentro de cada corchete vive un elemento con un tipo de dato
+*/
+
+let arreglo1= []; //Array vacio
+console.log(`array vacio ${arreglo1}`);
+//los elementos de un aray se separan mediante comas
+let cars = ['Ford', 'BMW', 'KIA', 'Mazda']; //array de strings
+console.log(cars);
+console.log(typeof(cars));
+//la longitud corresponde al numero de elementos a partir del indice 0
+console.log(cars.length);
+
+//Array de numbers
+
+let salariesMxn = [8000, 10000,12000,14000,16000,18000,20000,22000,24000,26000,28000,30000];
+console.log(salariesMxn.length);//output: 12
+console.log(salariesMxn);
+
+/*
+Objetos. Los objetos son tipos de datos en JS, con una estrucura definida que nos permite almacenar informacion mediante llaves (claves) y valores.
+Su sintaxis es la siguiente;
+const object {
+    clave1: valor1 (dato1),
+    clave2: valor2 (dato2)
+    }
+Los objetos pueden almacenar diferentes tipos de valores.
+*/
+
+const employee = {
+    firstName: 'Rey David',
+    lastName: 'Martínez',
+    age: 29,
+    country: 'Mexico'
+}
+
+console.log(employee);
+//mostrando mi objeto como tabla
+console.table(employee);
+//mostrando mi array como tabla
+console.table(cars);
