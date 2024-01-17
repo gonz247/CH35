@@ -1,0 +1,7 @@
+.astro--container {
+    background-color: #3C1053;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
