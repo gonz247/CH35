@@ -35,7 +35,7 @@ oneAsync();*/
 const url = "https://jsonplaceholder.typicode.com/users"
 
 fetch(url)
-    //si se cumple la promesa, vamos a traer los datos de la APY y se convertiran en tipo json para poder mostrarlos en consola
+    //si se cumple la promesa, vamos a traer los datos de la API y se convertiran en tipo json para poder mostrarlos en consola
     .then(data => data.json())
     .then(data => {
         console.log(data); //mostrando en consola todos los usuario de la API
@@ -104,6 +104,7 @@ botonProductos.addEventListener("click", () => {
 
 })
 
+console.log(productos);
 //Funcion para crear, agregar y mostrar elementos desde el DOM
 const mostrarProductos = (productos) => {
     productos.map((productos) => {
